@@ -3,7 +3,7 @@
 
 To the best of our knowledge this is still the smallest Capacitively Coupled Contactless Conductivity Detector (C4D) available…. and it’s open!
 
-We introduced the first C4D in 1998 [1], and after trials and errors, we published an improved version in 2009 [2]. Here, the continuously improved version is available.
+Our first C4D was introduced in 1998 [1], and after trials and errors, we published an improved version in 2009 [2]. Here, the continuously improved version is available.
 
 What is here?
 
