@@ -9,6 +9,8 @@ Whether you wish a fast track, go straight to Gerber and send the files to some 
 
 The previous version of the PCBs was made available as a panel with the boards for three detectors. There was, however, a small but important failure in the tracks. Unfortunately, two tracks were merged in some point during the production, and now they must be fixed. Figure 1 shows that board and the two small cuts that must be done in the oscillator board. You can use a sharp (and hard) device to cut the merged tracks… and that’s all.
 
+![Figure 1]( https://github.com/claudimir-lago/openC4D/blob/master/C4D_hardware/images/Fig%202019-10-29%20162630.png)
+
 #### _A step-by-step building process (with tips and tricks)_
 
 <<TODO>>
