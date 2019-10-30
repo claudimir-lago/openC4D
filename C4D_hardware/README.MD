@@ -9,20 +9,26 @@ Whether you wish a fast track, go straight to Gerber and send the files to some 
 
 The previous version of the PCBs was made available as a panel with the boards for three detectors. There was, however, a small but important failure in the tracks. Unfortunately, two tracks were merged in some point during the production, and now they must be fixed. Figure 1 shows that board and the two small cuts that must be done in the oscillator board. You can use a sharp (and hard) device to cut the merged tracks… and that’s all.
 
+
 ![Figure A](https://github.com/claudimir-lago/openC4D/blob/master/C4D_hardware/images/FigA%202019-10-29%20162630.png)
 #### _Figure 1._ The red circles show where to cut the tracks. Don’t worry, because there are redundant tracks keeping the right connections between the parts.
+
 
 ### _A step-by-step building process (with tips and tricks)_
 
 Although the present files are for one detector, this tutorial is based on the previous paneled version, but don’t worry. As shown in Figure 2, after marking the borders and cutting off the boards, you will have essentially the same boards that you need to build the openC4D.
 
+
 ![Figure B](https://github.com/claudimir-lago/openC4D/blob/master/C4D_hardware/images/FigB%202019-10-29%20164422.png)
 #### _Figure 2._ We used a CNC machine to make the grooves between all PCBs, but you can use any other method to cut FR04 PCBs. After that, the PCBs are separated, and the borders are sanded accordingly.
 
+
 The four PCBs will be assembled as a “sandwich”, but we need the stuffing for the sandwich: two insulant layers and the ground plane, as shown in Figure 3. These layers will be put between the oscillator and rectifier PCBs and will determine the gap between the electrodes, which essentially determine the detection length.
+
 
 ![Figure C](https://github.com/claudimir-lago/openC4D/blob/master/C4D_hardware/images/FigC%202019-10-29%20180601.png)
 #### _Figure 3._ The set of seven layers of an openC4D: shield PCBs (a and g), rectifier PCB (b), insulating layers (c and e), copper ground plane (d), and oscillator PCB (f). The copper layer was prepared from a copper foil tape (shown in the inset). After cutting, the copper layer is pulled off and stick to one of the insulating layers.
+
 
 Different materials can be used for the insulating and ground plane layers.
 
@@ -32,7 +38,7 @@ The ground plane can be made of aluminum, copper, brass, or other conductive mat
 
 Be careful in making the holes through which the capillary will pass. For instance, a small barb in the copper layer could get into electrical contact with one of the electrodes from either the oscillator or the rectifier PCBs. Make sure, thus, that the holes are clear of barbs to prevent short circuits. 
 
-The PCBs were prepared for SMD components, but there are a two options for the integrated circuits (ICs) U1 and U2 in the rectifier PCB: 5-pin SOT-23 and 8-pin SOIC. Figure 4 shows PCBs populated with these two kinds of components. SOT-23 has a smaller footprint, but SOIC is more popular. The idea was to make a board that could accept these two different versions of operational amplifiers available in the market. There is, however, a very important trick here: _the 5-pin SOT-23 must be soldered upside-down!!!_ This was the price to make the board flexible and simple at the same time. Whether you can get the 8-pin SOIC version, buy it because it is safer and usually cheaper solution.
+The PCBs were prepared for SMD components, but there are a two options for the integrated circuits (ICs) U1 and U2 in the rectifier PCB: 5-pin SOT-23 and 8-pin SOIC. Figure 4 shows PCBs populated with these two kinds of components. SOT-23 has a smaller footprint, but SOIC is more popular. The idea was to make a board that could accept these two different versions of operational amplifiers available in the market. There is, however, a very important trick here: **the 5-pin SOT-23 must be soldered upside-down!!!** This was the price to make the board flexible and simple at the same time. Whether you can get the 8-pin SOIC version, buy it because it is safer and usually cheaper solution.
 
 
 ![Figure D](https://github.com/claudimir-lago/openC4D/blob/master/C4D_hardware/images/FigD%202019-10-30%20132107.png)
@@ -41,8 +47,10 @@ The PCBs were prepared for SMD components, but there are a two options for the i
 
 Although a connector can be soldered at the border of the PCB, we’ve used to solder the cable to the boards, because the final setup is more robust and compact. In this case, make sure that the solder joint has a low profile as shown in Figure 5 in order to prevent that it touches the other PCB. You should try to make a proper [solder joint]( https://learn.adafruit.com/adafruit-guide-excellent-soldering/tools) and cut off the excess after that.
 
+
 ![Figure E](https://github.com/claudimir-lago/openC4D/blob/master/C4D_hardware/images/FigE%202019-10-30%20134234.png)
 #### _Figure 5._ Pictures of a solder joint before and after the cutoff.
+
 
 Before finishing, it is a good idea to check the voltages and waveforms at the test points.
 
@@ -63,14 +71,13 @@ The waveform at the output of the transimpedance amplifier (U1.1 in Figure 7) sh
 
 The waveform at the output of U2.1 is not exactly a sine wave, because of the diodes, but it should respond to the output of the transimpedance amplifier. At TP9 and TP10, the negative and positive half waves, respectively, should be detected. Similar to all other alternated signals showed in these figures, there is a +2.5-V offset.
 
-Finally, after the RC filters (input of the analog-to-digital converter), only flat lines should be detected.
+Finally, after the RC filters (input of the analog-to-digital converter), only flat lines should be detected. 
+
+If everything is OK, it’s time to finish the assembly (Figure 8).
 
 
 ![Figure G](https://github.com/claudimir-lago/openC4D/blob/master/C4D_hardware/images/FigG_Rectifier-openC4D-Schematic.png)
 #### _Figure 7._ Waveforms at the most important test points in the rectifier board.
-
-
-If everything is OK, it’s time to finish the assembly (Figure 8).
 
 
 ![Figure H](https://github.com/claudimir-lago/openC4D/blob/master/C4D_hardware/images/FigH_2019-10-30%20163401.png)
@@ -78,5 +85,6 @@ If everything is OK, it’s time to finish the assembly (Figure 8).
 
 
 
-#### Thanks to Eric T. da Costa and Kelliton J. M. Francisco
+
+#### _Thanks to Eric T. da Costa and Kelliton J. M. Francisco_
 
