@@ -1,0 +1,12 @@
+Partlist exported from D:/pop/posdoc/projetos/C4D/OpenC4D_Shield_Version2/OpenC4D_Shield-version2.sch at 28/10/2021 13:18
+
+Qty Value                      Device                     Package       Parts              Description                          SPICEMODEL SPICEPREFIX
+4                              22-27-2061-06              6410-06       AD0, AD1, AD2, AD3 CONNECTOR                                                  
+4                              R0204/7                    0204/7        R1, R2, R3, R4     RESISTOR, European symbol            NONE       R          
+2   100n                       C-EU050-025X075            C050-025X075  C1, C3             CAPACITOR, European symbol                                 
+1   100u                       CPOL-EUE3.5-8              E3,5-8        C2                 POLARIZED CAPACITOR, European symbol                       
+3   22-27-2031-03              22-27-2031-03              6410-03       I2C, TM0, TM1      CONNECTOR                                                  
+1   7809TV                     7812TV                     TO220V        IC2                Positive VOLTAGE REGULATOR                                 
+1   ARDUINO_UNO_R3_SHIELDBASIC ARDUINO_UNO_R3_SHIELDBASIC UNO_R3_SHIELD B1                 Arduino R3 Shield Footprint                     X          
+1   ext0                       ML10                       ML10          EXT-0              HARTING                                                    
+1   ext1                       ML10                       ML10          EXT-1              HARTING                                                    
